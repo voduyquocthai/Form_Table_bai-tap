@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Market Research Survey</h2>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <h3>What is your age range?</h3>
+    <select name="agerange">
+        <option value="18-24">18-24</option>
+        <option value="25-34">25-34</option>
+        <option value="35-50">35-50</option>
+        <option value="50+">50+</option>
+      </select>
+    <h3>What is your yearly income range?</h3>
+    <select name="income">
+        <option value="a">$0 - $25000</option>
+        <option value="b">$25000 - $50000</option>
+        <option value="c">$50001 - $100000</option>
+        <option value="d">$100000+</option>
+    </select>
+    <h3>Gender Identity</h3>
+    <form>
+        <label><input name="Gender" value="M" type="radio" checked/>Male</label><br/>
+        <label><input name="Gender" value="F" type="radio"/>Female</label> <br/>
+    </form>
+    <h3>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h3>
+    <form>
+        <label><input name="product" value="P1" type="checkbox"/>Product 1</label> <br/>
+        <label><input name="product" value="P2" type="checkbox"/>Product 2</label> <br/>
+        <label><input name="product" value="P3" type="checkbox"/>Product 3</label> <br/>
+    </form>
+    <h3>How often would you use our new product?</h3>
+    <form>
+        <label><input name="often" value="D" type="radio" checked/>Daily</label> <br/>
+        <label><input name="often" value="W" type="radio"/>Weekly</label> <br/>
+        <label><input name="often" value="M" type="radio"/>Monthly</label> <br/>
+    </form>
+    <h3>What would you pay for the new product?</h3>
+    <span>$</span>
+    <span>
+        <input name="dollars" type="number" size="25"/>
+    </span>
+    <span>.</span>
+    <span>
+        <input name="cents" type="number" size="25"/>
+    </span><br/>
+    <p>Dollars&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cents</p>
+    <h3>What features would you like to see in the new product?</h3>
+    <textarea spellcheck="true" rows="10" cols="50" tabindex="0" onkeyup="handleInput(this); " onchange="handleInput(this);" placeholder=""></textarea>
+    <h3>Please rate your level of agreement with the following statements</h3>
+    <table border="1">
+        <tr>
+            <th></th>
+            <th>Strong Disagree</th> 
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strong Agree</th>
+          </tr>
+          <tr>
+            <th> Our Product Are Priced Fairly</th>
+            <form>
+            <th><label><input name="level" value="1" type="radio" checked/>1</label></th> 
+            <th><label><input name="level" value="2" type="radio" checked/>2</label></th>
+            <th><label><input name="level" value="3" type="radio" checked/>3</label></th>
+            <th><label><input name="level" value="4" type="radio" checked/>4</label></th>
+            </form>
+          </tr>
+          <tr>
+            <th> Our Product Are High Quality</th>
+            <form>
+            <th><label><input name="level" value="1" type="radio" checked/>1</label></th> 
+            <th><label><input name="level" value="2" type="radio" checked/>2</label></th>
+            <th><label><input name="level" value="3" type="radio" checked/>3</label></th>
+            <th><label><input name="level" value="4" type="radio" checked/>4</label></th>
+            </form>
+          </tr>
+          <tr>
+            <th> You Would Recommend Our Product To A Friend Or Cowork</th>
+            <form>
+            <th><label><input name="level" value="1" type="radio" checked/>1</label></th> 
+            <th><label><input name="level" value="2" type="radio" checked/>2</label></th>
+            <th><label><input name="level" value="3" type="radio" checked/>3</label></th>
+            <th><label><input name="level" value="4" type="radio" checked/>4</label></th>
+            </form>
+          </tr>
+    </table><br/>
+    <button type="submit" value="Submit">Submit</button>
+</body>
+</html>
